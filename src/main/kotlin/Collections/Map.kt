@@ -11,4 +11,6 @@ fun main() {
     println(passedStudents)
     println(passedStudents.keys)
     //add a filter, print the name starting with a
+    val nameWithA = passedStudents.filterValues { it.startsWith("a") }
+    print(nameWithA)
 }
